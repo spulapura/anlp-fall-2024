@@ -47,14 +47,15 @@ Can return all matches, or just the first one. Many variants, we'll use the exte
 	1. /guppy|ies/ matches "guppy" or "ies" rather than "gupp" + ("y" or "ies")
 	2. So we do /gupp(y|ies)/ so everything in the parens is treated like one character to the surrounding operators
 3. Kleene* unlike | applies by default to a single character rather than a sequence. 
-	1. /Column [0-9]+ \*/ matches Column and one number and then any number of spaces
+	1. /Column [0-9]+ \*/ matches Column and one or more digits and then any number of spaces
 	2. /(Column [0-9]+ \*)\*/ matches any number of "Column # " with any number of spaces between (ie any number of the previous expression)
-4. Operator Precedence Heirarchy
+4. Operator Precedence Hierarchy 
+
 		1. Parentheses ()
 		2. Counters * + ? {}
 		3. Sequences and anchors 
 		4. Disjunction |
-5. Greedy-- always match largest string that fits the pattern
+6. Greedy-- always match largest string that fits the pattern
 	1. Can enforce non-greedy matching with ?
 		1. \*?  and +? match as little as possible
 ## A Simple Example
