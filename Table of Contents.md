@@ -1,4 +1,16 @@
 # Module 1
 
-[[J&M 2.0-2.2, 3.0-3.1, 3.9]]
+[[JM2 Chapter 2]]
+[[JM2 Chapter 3]]
+
+# Module 2
+
+[[JM3 Chapter 2]]
+[[JM3 Chapter 4]]
+[[JM3 Chapter 5]]
+
+## Module 3
+
+
+
 
